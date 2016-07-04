@@ -15,6 +15,10 @@
 		18D81CBF1D23792D00C23572 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D81CBD1D23792D00C23572 /* LaunchScreen.storyboard */; };
 		18D81CCA1D23792E00C23572 /* TagViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D81CC91D23792E00C23572 /* TagViewTests.m */; };
 		18D81CD51D23792E00C23572 /* TagViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D81CD41D23792E00C23572 /* TagViewUITests.m */; };
+		18D81CEC1D237B5C00C23572 /* EqualSpaceFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D81CEB1D237B5C00C23572 /* EqualSpaceFlowLayout.m */; };
+		18D81CF01D237BAC00C23572 /* BtnCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D81CEE1D237BAC00C23572 /* BtnCollectionViewCell.m */; };
+		18D81CF11D237BAC00C23572 /* BtnCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D81CEF1D237BAC00C23572 /* BtnCollectionViewCell.xib */; };
+		18D81CF41D2384CB00C23572 /* UIView+DDAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D81CF31D2384CB00C23572 /* UIView+DDAddition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,13 @@
 		18D81CD01D23792E00C23572 /* TagViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TagViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D81CD41D23792E00C23572 /* TagViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TagViewUITests.m; sourceTree = "<group>"; };
 		18D81CD61D23792E00C23572 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18D81CEA1D237B5C00C23572 /* EqualSpaceFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EqualSpaceFlowLayout.h; sourceTree = "<group>"; };
+		18D81CEB1D237B5C00C23572 /* EqualSpaceFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EqualSpaceFlowLayout.m; sourceTree = "<group>"; };
+		18D81CED1D237BAC00C23572 /* BtnCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BtnCollectionViewCell.h; sourceTree = "<group>"; };
+		18D81CEE1D237BAC00C23572 /* BtnCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BtnCollectionViewCell.m; sourceTree = "<group>"; };
+		18D81CEF1D237BAC00C23572 /* BtnCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BtnCollectionViewCell.xib; sourceTree = "<group>"; };
+		18D81CF21D2384CB00C23572 /* UIView+DDAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DDAddition.h"; sourceTree = "<group>"; };
+		18D81CF31D2384CB00C23572 /* UIView+DDAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DDAddition.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +112,7 @@
 		18D81CAE1D23792D00C23572 /* TagView */ = {
 			isa = PBXGroup;
 			children = (
+				18D81CE91D237B5C00C23572 /* CollectionView */,
 				18D81CB21D23792D00C23572 /* AppDelegate.h */,
 				18D81CB31D23792D00C23572 /* AppDelegate.m */,
 				18D81CB51D23792D00C23572 /* ViewController.h */,
@@ -138,6 +150,20 @@
 				18D81CD61D23792E00C23572 /* Info.plist */,
 			);
 			path = TagViewUITests;
+			sourceTree = "<group>";
+		};
+		18D81CE91D237B5C00C23572 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				18D81CF21D2384CB00C23572 /* UIView+DDAddition.h */,
+				18D81CF31D2384CB00C23572 /* UIView+DDAddition.m */,
+				18D81CEA1D237B5C00C23572 /* EqualSpaceFlowLayout.h */,
+				18D81CEB1D237B5C00C23572 /* EqualSpaceFlowLayout.m */,
+				18D81CED1D237BAC00C23572 /* BtnCollectionViewCell.h */,
+				18D81CEE1D237BAC00C23572 /* BtnCollectionViewCell.m */,
+				18D81CEF1D237BAC00C23572 /* BtnCollectionViewCell.xib */,
+			);
+			path = CollectionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18D81CBF1D23792D00C23572 /* LaunchScreen.storyboard in Resources */,
+				18D81CF11D237BAC00C23572 /* BtnCollectionViewCell.xib in Resources */,
 				18D81CBC1D23792D00C23572 /* Assets.xcassets in Resources */,
 				18D81CBA1D23792D00C23572 /* Main.storyboard in Resources */,
 			);
@@ -270,9 +297,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18D81CF41D2384CB00C23572 /* UIView+DDAddition.m in Sources */,
+				18D81CF01D237BAC00C23572 /* BtnCollectionViewCell.m in Sources */,
 				18D81CB71D23792D00C23572 /* ViewController.m in Sources */,
 				18D81CB41D23792D00C23572 /* AppDelegate.m in Sources */,
 				18D81CB11D23792D00C23572 /* main.m in Sources */,
+				18D81CEC1D237B5C00C23572 /* EqualSpaceFlowLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
